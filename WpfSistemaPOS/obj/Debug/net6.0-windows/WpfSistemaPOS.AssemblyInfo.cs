@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WpfSistemaPOS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+387389227f37d4541b38756dadb63ab4025517f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("WpfSistemaPOS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WpfSistemaPOS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
