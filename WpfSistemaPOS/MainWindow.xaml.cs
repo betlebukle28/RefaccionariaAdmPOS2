@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfSistemaPOS
+namespace WpfSistemaPOS2
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -48,6 +48,5 @@ namespace WpfSistemaPOS
                 MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
     }
 }
