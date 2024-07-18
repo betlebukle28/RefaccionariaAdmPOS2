@@ -53,7 +53,7 @@ namespace WpfSistemaPOS {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfSistemaPOS;V1.0.0.0;component/puntodeventa.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfSistemaPOS;component/puntodeventa.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\PuntoDeVenta.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

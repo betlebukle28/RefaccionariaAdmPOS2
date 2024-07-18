@@ -14,11 +14,11 @@
         <Canvas Background="Gray"></Canvas>
         <Grid Background="Gray" Grid.Column="0" Margin="10">
             <StackPanel>
-                <Button Content="Punto de venta" Height="50" Margin="5"/>
+                <Button Content="Punto de venta" Height="50" Margin="5" Click="Pantalla_PuntoDeVenta"/>
                 <Button Content="COMPRAS" Height="50" Margin="5"/>
                 <Button Content="INVENTARIO" Height="50" Margin="5"/>
                 <Button Content="ETIQUETAS" Height="50" Margin="5"/>
-                <Button Content="ETIQUETAS2" Height="50" Margin="5"/>
+                <Button Content="CLIENTES" Height="50" Margin="5" Click="Pantalla_Clientes"/>
 
             </StackPanel>
         </Grid>

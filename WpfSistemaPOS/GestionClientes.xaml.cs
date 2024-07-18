@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace WpfSistemaPOS
 {
     /// <summary>
-    /// Lógica de interacción para Window1.xaml
+    /// Lógica de interacción para GestionClientes.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class GestionClientes : Window
     {
-        public Window1()
+        public GestionClientes()
         {
             InitializeComponent();
         }

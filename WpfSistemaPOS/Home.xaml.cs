@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfSistemaPOS;
 
 namespace WpfSistemaPOS2
 {
@@ -22,6 +23,20 @@ namespace WpfSistemaPOS2
         public Home()
         {
             InitializeComponent();
+        }
+
+        private void Pantalla_Clientes(object sender, RoutedEventArgs e)
+        {
+            GestionClientes gestionclientes = new();
+            gestionclientes.Show();
+            this.Close();
+        }
+
+        private void Pantalla_PuntoDeVenta(object sender, RoutedEventArgs e)
+        {
+            PuntoDeVentaClasico puntoDeVentaClasico = new ();
+            puntoDeVentaClasico.Show();
+            this.Close();
         }
     }
 }
