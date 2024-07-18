@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfSistemaPOS.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSistemaPOS"
+        mc:Ignorable="d"
+        Title="AB-000001-01" Height="300" Width="600">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Título -->
+        <TextBlock Text="Claves adicionales o presentaciones" FontWeight="Bold" FontSize="14" Grid.ColumnSpan="2" Margin="0 0 0 10" HorizontalAlignment="Center"/>
+
+        <!-- DataGrid -->
+        <DataGrid Grid.Row="1" Grid.Column="0" AutoGenerateColumns="False" Margin="0 0 10 0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Clave" Binding="{Binding Clave}" Width="*"/>
+                <DataGridTextColumn Header="Precio" Binding="{Binding Precio}" Width="*"/>
+                <DataGridTextColumn Header="Pese..." Binding="{Binding Pese}" Width="*"/>
+                <DataGridTextColumn Header="Cantidad" Binding="{Binding Cantidad}" Width="*"/>
+                <DataGridTextColumn Header="Dato1" Binding="{Binding Dato1}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Botones -->
+        <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Top">
+            <Button Content="Nueva clave (F9)" Width="120" Margin="0,5"/>
+            <Button Content="Consultar" Width="120" Margin="0,5"/>
+            <Button Content="Modificar" Width="120" Margin="0,5"/>
+            <Button Content="Eliminar" Width="120" Margin="0,5"/>
+        </StackPanel>
+    </Grid>
+</Window>
