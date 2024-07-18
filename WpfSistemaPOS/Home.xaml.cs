@@ -38,5 +38,12 @@ namespace WpfSistemaPOS2
             puntoDeVentaClasico.Show();
             this.Close();
         }
+
+        private void Pantalla_Articulo(object sender, RoutedEventArgs e)
+        {
+            NuevaClave nuevaClave = new NuevaClave();
+            nuevaClave.Show();
+            this.Close();
+        }
     }
 }

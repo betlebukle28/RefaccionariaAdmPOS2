@@ -1,0 +1,113 @@
+﻿<Window x:Class="WpfSistemaPOS.GestionArticulos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSistemaPOS"
+        mc:Ignorable="d"
+        Title="GestionArticulos" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Título -->
+        <TextBlock Text="Propiedades de Artículo" FontWeight="Bold" FontSize="16" Grid.ColumnSpan="2" Margin="0 0 0 10"/>
+
+        <!-- Primera columna -->
+        <StackPanel Grid.Row="1" Grid.Column="0" Margin="0 0 10 0">
+            <Label Content="Artículo:" />
+            <TextBox />
+            <Label Content="Descripción:" />
+            <TextBox />
+
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Width="150">
+                    <Label Content="Línea:" />
+                    <TextBox Text="SYS" />
+                </StackPanel>
+                <StackPanel Width="150" Margin="10,0,0,0">
+                    <Label Content="Marca:" />
+                    <TextBox Text="SYS" />
+                </StackPanel>
+                <StackPanel Width="150" Margin="10,0,0,0">
+                    <Label Content="Fabricante:" />
+                    <TextBox Text="SYS" />
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Width="150">
+                    <Label Content="Impuesto:" />
+                    <TextBox Text="IVA" />
+                </StackPanel>
+                <StackPanel Width="150" Margin="10,0,0,0">
+                    <Label Content="Ubicación:" />
+                    <TextBox Text="SYS" />
+                </StackPanel>
+            </StackPanel>
+
+            <Label Content="Costo Último:" />
+            <TextBox />
+            <Label Content="Costo:" />
+            <TextBox />
+
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Width="100">
+                    <Label Content="Precio de lista:" />
+                    <TextBox />
+                </StackPanel>
+                <StackPanel Width="100" Margin="10,0,0,0">
+                    <Label Content="Precio 2:" />
+                    <TextBox />
+                </StackPanel>
+                <StackPanel Width="100" Margin="10,0,0,0">
+                    <Label Content="Precio 3:" />
+                    <TextBox />
+                </StackPanel>
+            </StackPanel>
+
+            <Label Content="Información:" />
+            <TextBox Height="60"/>
+        </StackPanel>
+
+        <!-- Segunda columna -->
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Label Content="Peso:" />
+            <TextBox />
+            <Label Content="Unidad:" />
+            <TextBox />
+
+            <Label Content="Existencia:" />
+            <TextBox />
+
+            <Label Content="Cantidad:" />
+            <TextBox />
+
+            <Label Content="Cantidad:" />
+            <TextBox />
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                <Button Content="Guardar y Salir (F4)" Margin="0,5" Width="120" />
+                <Button Content="Guardar (F5)" Margin="5,5,0,0" Width="120" />
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Botones adicionales -->
+        <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,10,10,0">
+            <Button Content="Sucursal (F7)" Width="120" Margin="0,5"/>
+            <Button Content="Proveedores (F8)" Width="120" Margin="0,5"/>
+            <Button Content="Presentaciones (F9)" Width="120" Margin="0,5"/>
+            <Button Content="Componentes (F10)" Width="120" Margin="0,5"/>
+            <Button Content="Asociados (F11)" Width="120" Margin="0,5"/>
+            <Button Content="Cambio de clave" Width="120" Margin="0,5"/>
+            <Button Content="Ofertas" Width="120" Margin="0,5"/>
+            <Button Content="Claves Sat" Width="120" Margin="0,5"/>
+        </StackPanel>
+    </Grid>
+</Window>

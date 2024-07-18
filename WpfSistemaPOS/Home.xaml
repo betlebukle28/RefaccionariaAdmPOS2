@@ -26,7 +26,7 @@
         <Grid Grid.Column="1" Margin="10">
             <StackPanel HorizontalAlignment="Left">
                 <Button Content="NUEVA COMPRA" Width="200" Height="50" Margin="5"/>
-                <Button Content="ARTICULOS" Width="200" Height="50" Margin="5"/>
+                <Button Content="ARTICULOS" Width="200" Height="50" Margin="5" Click="Pantalla_Articulo"/>
                 <Button Content="VEHICULOS" Width="200" Height="50" Margin="5"/>
                 <Button Content="ENTRADAS/SALIDAS DE INV." Width="200" Height="50" Margin="5"/>
             </StackPanel>
