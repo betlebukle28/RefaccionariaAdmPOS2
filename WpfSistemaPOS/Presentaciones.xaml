@@ -32,10 +32,10 @@
 
         <!-- Botones -->
         <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Top">
-            <Button Content="Nueva clave (F9)" Width="120" Margin="0,5"/>
-            <Button Content="Consultar" Width="120" Margin="0,5"/>
-            <Button Content="Modificar" Width="120" Margin="0,5"/>
-            <Button Content="Eliminar" Width="120" Margin="0,5"/>
+            <Button Content="Nueva Clave" Click="BtnNuevaClave_Click" Width="120" Margin="5"/>
+            <Button Content="Consultar" Click="BtnConsultar_Click" Width="120" Margin="5"/>
+            <Button Content="Modificar" Click="BtnModificar_Click" Width="120" Margin="5"/>
+            <Button Content="Eliminar" Click="BtnEliminar_Click" Width="120" Margin="5"/>
         </StackPanel>
     </Grid>
 </Window>

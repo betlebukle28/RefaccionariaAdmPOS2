@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|c:\\users\\alang\\onedrive\\documentos\\github\\refaccionariaadmpos2\\wpfsistemapos\\puntodeventa.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|solutionrelative:wpfsistemapos\\puntodeventa.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|c:\\users\\alang\\onedrive\\documentos\\github\\refaccionariaadmpos2\\wpfsistemapos\\nuevaclave.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|solutionrelative:wpfsistemapos\\nuevaclave.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|c:\\users\\alang\\onedrive\\documentos\\github\\refaccionariaadmpos2\\wpfsistemapos\\nuevaclave.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|solutionrelative:wpfsistemapos\\nuevaclave.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|c:\\users\\alang\\onedrive\\documentos\\github\\refaccionariaadmpos2\\wpfsistemapos\\presentaciones.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|solutionrelative:wpfsistemapos\\presentaciones.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|c:\\users\\alang\\onedrive\\documentos\\github\\refaccionariaadmpos2\\wpfsistemapos\\presentaciones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|solutionrelative:wpfsistemapos\\presentaciones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|c:\\users\\alang\\onedrive\\documentos\\github\\refaccionariaadmpos2\\wpfsistemapos\\eliminar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|solutionrelative:wpfsistemapos\\eliminar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|c:\\users\\alang\\onedrive\\documentos\\github\\refaccionariaadmpos2\\wpfsistemapos\\modificar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|solutionrelative:wpfsistemapos\\modificar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|c:\\users\\alang\\onedrive\\documentos\\github\\refaccionariaadmpos2\\wpfsistemapos\\consultar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|solutionrelative:wpfsistemapos\\consultar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|c:\\users\\alang\\onedrive\\documentos\\github\\refaccionariaadmpos2\\wpfsistemapos\\consultar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|solutionrelative:wpfsistemapos\\consultar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|c:\\users\\alang\\onedrive\\documentos\\github\\refaccionariaadmpos2\\wpfsistemapos\\puntodeventas.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|solutionrelative:wpfsistemapos\\puntodeventas.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|c:\\users\\alang\\onedrive\\documentos\\github\\refaccionariaadmpos2\\wpfsistemapos\\window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|solutionrelative:wpfsistemapos\\window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A437C3C-0A70-4D57-A84E-2A9895E4F16A}|WpfSistemaPOS\\WpfSistemaPOS.csproj|c:\\users\\alang\\onedrive\\documentos\\github\\refaccionariaadmpos2\\wpfsistemapos\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,18 +67,121 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PuntoDeVenta.xaml",
-              "DocumentMoniker": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\PuntoDeVenta.xaml",
-              "RelativeDocumentMoniker": "WpfSistemaPOS\\PuntoDeVenta.xaml",
-              "ToolTip": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\PuntoDeVenta.xaml",
-              "RelativeToolTip": "WpfSistemaPOS\\PuntoDeVenta.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-11T02:22:16.142Z",
+              "Title": "NuevaClave.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\NuevaClave.xaml.cs",
+              "RelativeDocumentMoniker": "WpfSistemaPOS\\NuevaClave.xaml.cs",
+              "ToolTip": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\NuevaClave.xaml.cs",
+              "RelativeToolTip": "WpfSistemaPOS\\NuevaClave.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T15:24:12.554Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Presentaciones.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\Presentaciones.xaml.cs",
+              "RelativeDocumentMoniker": "WpfSistemaPOS\\Presentaciones.xaml.cs",
+              "ToolTip": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\Presentaciones.xaml.cs",
+              "RelativeToolTip": "WpfSistemaPOS\\Presentaciones.xaml.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAgwDMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T15:22:05.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Eliminar.xaml",
+              "DocumentMoniker": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\Eliminar.xaml",
+              "RelativeDocumentMoniker": "WpfSistemaPOS\\Eliminar.xaml",
+              "ToolTip": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\Eliminar.xaml",
+              "RelativeToolTip": "WpfSistemaPOS\\Eliminar.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-29T15:17:22.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Modificar.xaml",
+              "DocumentMoniker": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\Modificar.xaml",
+              "RelativeDocumentMoniker": "WpfSistemaPOS\\Modificar.xaml",
+              "ToolTip": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\Modificar.xaml",
+              "RelativeToolTip": "WpfSistemaPOS\\Modificar.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-29T15:16:44.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Consultar.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\Consultar.xaml.cs",
+              "RelativeDocumentMoniker": "WpfSistemaPOS\\Consultar.xaml.cs",
+              "ToolTip": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\Consultar.xaml.cs",
+              "RelativeToolTip": "WpfSistemaPOS\\Consultar.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T15:15:44.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Consultar.xaml",
+              "DocumentMoniker": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\Consultar.xaml",
+              "RelativeDocumentMoniker": "WpfSistemaPOS\\Consultar.xaml",
+              "ToolTip": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\Consultar.xaml",
+              "RelativeToolTip": "WpfSistemaPOS\\Consultar.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-29T15:14:42.72Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Presentaciones.xaml",
+              "DocumentMoniker": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\Presentaciones.xaml",
+              "RelativeDocumentMoniker": "WpfSistemaPOS\\Presentaciones.xaml",
+              "ToolTip": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\Presentaciones.xaml",
+              "RelativeToolTip": "WpfSistemaPOS\\Presentaciones.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-29T15:09:35.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Window1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\Window1.xaml.cs",
+              "RelativeDocumentMoniker": "WpfSistemaPOS\\Window1.xaml.cs",
+              "ToolTip": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\Window1.xaml.cs",
+              "RelativeToolTip": "WpfSistemaPOS\\Window1.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T15:04:43.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NuevaClave.xaml",
+              "DocumentMoniker": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\NuevaClave.xaml",
+              "RelativeDocumentMoniker": "WpfSistemaPOS\\NuevaClave.xaml",
+              "ToolTip": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\NuevaClave.xaml",
+              "RelativeToolTip": "WpfSistemaPOS\\NuevaClave.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-18T00:17:49.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PuntoDeVentas.xaml",
+              "DocumentMoniker": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\PuntoDeVentas.xaml",
+              "RelativeDocumentMoniker": "WpfSistemaPOS\\PuntoDeVentas.xaml",
+              "ToolTip": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\PuntoDeVentas.xaml",
+              "RelativeToolTip": "WpfSistemaPOS\\PuntoDeVentas.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-18T00:13:40.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Home.xaml",
               "DocumentMoniker": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\Home.xaml",
               "RelativeDocumentMoniker": "WpfSistemaPOS\\Home.xaml",
@@ -53,28 +192,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WpfSistemaPOS\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\MainWindow.xaml",
               "RelativeToolTip": "WpfSistemaPOS\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-11T01:56:18.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-11T01:56:18.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfSistemaPOS\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\alang\\OneDrive\\Documentos\\GitHub\\RefaccionariaAdmPOS2\\WpfSistemaPOS\\MainWindow.xaml.cs",
               "RelativeToolTip": "WpfSistemaPOS\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACkAAAAnAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAjwBgAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T01:56:18.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-11T01:56:18.782Z"
             }
           ]
         }

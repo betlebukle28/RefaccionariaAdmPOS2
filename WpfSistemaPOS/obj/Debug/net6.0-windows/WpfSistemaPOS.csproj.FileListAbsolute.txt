@@ -21,3 +21,15 @@ C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\Wpf
 C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Debug\net6.0-windows\WpfSistemaPOS.pdb
 C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Debug\net6.0-windows\WpfSistemaPOS.genruntimeconfig.cache
 C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Debug\net6.0-windows\ref\WpfSistemaPOS.dll
+C:\Users\alang\OneDrive\Documentos\GitHub\RefaccionariaAdmPOS2\WpfSistemaPOS\obj\Debug\net6.0-windows\Home.g.cs
+C:\Users\alang\OneDrive\Documentos\GitHub\RefaccionariaAdmPOS2\WpfSistemaPOS\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\alang\OneDrive\Documentos\GitHub\RefaccionariaAdmPOS2\WpfSistemaPOS\obj\Debug\net6.0-windows\NuevaClave.g.cs
+C:\Users\alang\OneDrive\Documentos\GitHub\RefaccionariaAdmPOS2\WpfSistemaPOS\obj\Debug\net6.0-windows\Presentaciones.g.cs
+C:\Users\alang\OneDrive\Documentos\GitHub\RefaccionariaAdmPOS2\WpfSistemaPOS\obj\Debug\net6.0-windows\PuntoDeVenta.g.cs
+C:\Users\alang\OneDrive\Documentos\GitHub\RefaccionariaAdmPOS2\WpfSistemaPOS\obj\Debug\net6.0-windows\PuntoDeVentas.g.cs
+C:\Users\alang\OneDrive\Documentos\GitHub\RefaccionariaAdmPOS2\WpfSistemaPOS\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\alang\OneDrive\Documentos\GitHub\RefaccionariaAdmPOS2\WpfSistemaPOS\obj\Debug\net6.0-windows\WpfSistemaPOS_MarkupCompile.cache
+C:\Users\alang\OneDrive\Documentos\GitHub\RefaccionariaAdmPOS2\WpfSistemaPOS\obj\Debug\net6.0-windows\WpfSistemaPOS_MarkupCompile.lref
+C:\Users\alang\OneDrive\Documentos\GitHub\RefaccionariaAdmPOS2\WpfSistemaPOS\obj\Debug\net6.0-windows\WpfSistemaPOS.dll
+C:\Users\alang\OneDrive\Documentos\GitHub\RefaccionariaAdmPOS2\WpfSistemaPOS\obj\Debug\net6.0-windows\refint\WpfSistemaPOS.dll
+C:\Users\alang\OneDrive\Documentos\GitHub\RefaccionariaAdmPOS2\WpfSistemaPOS\obj\Debug\net6.0-windows\WpfSistemaPOS.pdb

@@ -103,6 +103,7 @@
             <Button Content="Sucursal (F7)" Width="120" Margin="0,5"/>
             <Button Content="Proveedores (F8)" Width="120" Margin="0,5"/>
             <Button Content="Presentaciones (F9)" Width="120" Margin="0,5"/>
+            <Button Content="Presentaciones" Click="BtnPresentaciones_Click"/>
             <Button Content="Componentes (F10)" Width="120" Margin="0,5"/>
             <Button Content="Asociados (F11)" Width="120" Margin="0,5"/>
             <Button Content="Cambio de clave" Width="120" Margin="0,5"/>

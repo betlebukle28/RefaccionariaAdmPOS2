@@ -15,13 +15,21 @@ using System.Windows.Shapes;
 namespace WpfSistemaPOS
 {
     /// <summary>
-    /// Lógica de interacción para Window1.xaml
+    /// Lógica de interacción para PuntoDeVentas.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class PuntoDeVentas : Window
     {
-        public Window1()
+        public PuntoDeVentas()
         {
             InitializeComponent();
+
+            private void BtnPresentaciones_Click(object sender, RoutedEventArgs e)
+            {
+                Presentaciones presentacionesWindow = new Presentaciones();
+                presentacionesWindow.Show();
+                this.Close(); // Cierra la ventana actual si es necesario
+            }
+
         }
     }
 }

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\alang\OneDrive\Documentos\GitHub\RefaccionariaAdmPOS2\WpfSistemaPOS\App.xaml
-2-1134580622
+9-1747896066
 
-7-575377222
+131416405507
 194-1830427032
-Home.xaml;MainWindow.xaml;
+Consultar.xaml;Eliminar.xaml;Home.xaml;MainWindow.xaml;Modificar.xaml;NuevaClave.xaml;Presentaciones.xaml;PuntoDeVenta.xaml;PuntoDeVentas.xaml;
 
-False
+True
 

@@ -15,25 +15,13 @@ using System.Windows.Shapes;
 namespace WpfSistemaPOS
 {
     /// <summary>
-    /// Lógica de interacción para NuevaClave.xaml
+    /// Lógica de interacción para Consultar.xaml
     /// </summary>
-    public partial class NuevaClave : Window
+    public partial class Consultar : Window
     {
-        public NuevaClave()
+        public Consultar()
         {
             InitializeComponent();
-        }
-
-        private void BtnAceptar_Click(object sender, RoutedEventArgs e)
-        {
-            // Lógica para guardar la nueva clave
-            MessageBox.Show("Nueva clave guardada con éxito.");
-            this.Close();
-        }
-
-        private void BtnCancelar_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
         }
     }
 }

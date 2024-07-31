@@ -7,7 +7,22 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Consultar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Eliminar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Home.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Modificar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NuevaClave.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Presentaciones.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Window1.xaml.cs">
@@ -15,10 +30,25 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Consultar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Eliminar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Home.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Modificar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NuevaClave.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Presentaciones.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
