@@ -1,17 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using WpfSistemaPOS2;
+using WpfSistemaPOS.CS;
 
 namespace WpfSistemaPOS
 {
@@ -20,39 +12,100 @@ namespace WpfSistemaPOS
     /// </summary>
     public partial class PuntoDeVentaClasico : Window
     {
+        private readonly MongoDBService _mongoDBService;
+
         public PuntoDeVentaClasico()
         {
             InitializeComponent();
-            LoadData();
+            _mongoDBService = new MongoDBService();
         }
 
-        private void LoadData()
+        private async void SearchBox_KeyDown(object sender, KeyEventArgs e)
         {
-            var items = new List<Item>
+            if (e.Key == Key.Enter)
             {
-                new Item { Articulo = "987", Quantity = 1, Descuento = 0, Descripcion = "LIMPIA CARBURADOR T4 VICTORY 53A", Lista = 87.00, Precio = 81.78 },
-                new Item { Articulo = "4844", Quantity = 1, Descuento = 0, Descripcion = "BUJIA PLATINO TS-III A3 A4 2.0 'DELGADA'", Lista = 52.00, Precio = 48.88 }
-            };
+                string searchText = searchBox.Text;
+
+                // Buscar por IdCompuesto exacto
+                var itemByIdCompuesto = await _mongoDBService.GetItemByIdCompuestoAsync(searchText);
+                if (itemByIdCompuesto != null)
+                {
+                    double Importeaux = itemByIdCompuesto.GetValue("Precio").ToDouble();
+                    AddItemToGrid(new Articulo
+                    {
+                        IdCompuesto = itemByIdCompuesto.GetValue("IdCompuesto").AsString,
+                        Descripcion = itemByIdCompuesto.GetValue("Descripcion").AsString,
+                        Precio = itemByIdCompuesto.GetValue("Precio").ToDouble(),
+                        Existencia = itemByIdCompuesto.GetValue("Existencia").ToInt32(),
+                        Cantidad = 1, // Inicia con una cantidad de 1
+                        Importe = itemByIdCompuesto.GetValue("Precio").ToDouble(),
+                    }) ;
+                }
+                else
+                {
+                    // Buscar por IdCompuesto o Descripcion parcial
+                    var itemsByPartialText = await _mongoDBService.GetItemsByPartialIdOrDescriptionAsync(searchText);
+                    if (itemsByPartialText.Any())
+                    {
+                        var busquedaArticuloWindow = new BusquedaArticulo(itemsByPartialText);
+                        if (busquedaArticuloWindow.ShowDialog() == true)
+                        {
+                            var selectedItem = busquedaArticuloWindow.SelectedItem;
+                            if (selectedItem != null)
+                            {
+                                selectedItem.Cantidad = 1; // Inicia con una cantidad de 1
+                                selectedItem.Importe = selectedItem.Precio;
+                                AddItemToGrid(selectedItem);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se encontraron artículos.", "Búsqueda", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
+            }
+        }
+
+        private void AddItemToGrid(Articulo item)
+        {
+            var items = dataGrid.ItemsSource as List<Articulo> ?? new List<Articulo>();
+
+            // Verificar si el artículo ya está en el carrito
+            var existingItem = items.FirstOrDefault(x => x.IdCompuesto == item.IdCompuesto);
+            if (existingItem != null)
+            {
+                existingItem.Importe = 0;
+                existingItem.Cantidad += item.Cantidad;
+                //item.Importe = items.Sum(x => x.Precio * x.Cantidad);
+                existingItem.Importe += existingItem.Cantidad * existingItem.Precio;
+            }
+            else
+            {
+                items.Add(item);
+            }
 
             dataGrid.ItemsSource = items;
+            dataGrid.Items.Refresh();
+
+            UpdateTotalAndUnits(items);
         }
 
-        private void Pagina_Inicio(object sender, RoutedEventArgs e)
+        private void UpdateTotalAndUnits(List<Articulo> items)
+        {
+            int totalUnidades = items.Sum(x => x.Cantidad);
+            double totalMN = items.Sum(x => x.Precio * x.Cantidad);
+            unidadesTextBox.Text = totalUnidades.ToString();
+            totalTextBlock.Text = totalMN.ToString("F2");
+        }
+
+        private async void Pagina_Inicio(object sender, RoutedEventArgs e)
         {
             Home home = new();
             home.Show();
             this.Close();
         }
-
-        public class Item
-        {
-            public string Articulo { get; set; }
-            public int Quantity { get; set; }
-            public double Descuento { get; set; }
-            public string Descripcion { get; set; }
-            public double Lista { get; set; }
-            public double Precio { get; set; }
-            public double Importe => Quantity * Precio;
-        }
     }
+
+   
 }

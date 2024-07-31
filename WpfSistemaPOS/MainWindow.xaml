@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfSistemaPOS2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="auto"
+        Width="auto">
     <Grid Background="LightGray">
         <Border Background="LightPink" BorderBrush="Black" BorderThickness="1" Margin="10">
             <Grid VerticalAlignment="Center"  HorizontalAlignment="Center" Width="300" Height="360" Background="#E7DEC2" >
@@ -23,12 +24,12 @@
 
                 <StackPanel Grid.Row="2" Margin="25,9.896,10,9.696">
                     <TextBlock FontSize="16" Text="Usuario" />
-                    <TextBox Name="txtUsuario" Width="232" HorizontalAlignment="Center" Margin="0,0,32.626,0" Height="29"/>
+                    <TextBox FontSize="16" Name="txtUsuario" Width="232" HorizontalAlignment="Center" Margin="0,0,32.626,0" Height="29"/>
                 </StackPanel>
 
                 <StackPanel Grid.Row="3" Margin="25,9.896,10,9.696">
                     <TextBlock FontSize="16" Text="Contraseña" />
-                    <PasswordBox Name="txtPassword" Width="232" HorizontalAlignment="Center" Margin="0,0,32.626,0" Height="29"/>
+                    <PasswordBox FontSize="16" Name="txtPassword" Width="232" HorizontalAlignment="Center" Margin="0,0,32.626,0" Height="29"/>
                 </StackPanel>
 
                 <Button Content="ACEPTAR" Width="120" Height="35" Background="White" HorizontalAlignment="Center" Margin="10" Grid.Row="4" Click="Button_Click"/>

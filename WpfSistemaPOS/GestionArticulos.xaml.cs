@@ -23,5 +23,12 @@ namespace WpfSistemaPOS
         {
             InitializeComponent();
         }
+
+        private void Pantalla_Presentaciones(object sender, RoutedEventArgs e)
+        {
+            Presentaciones presentaciones = new();
+            presentaciones.Show();
+            this.Close();
+        }
     }
 }

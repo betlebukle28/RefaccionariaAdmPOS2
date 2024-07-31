@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="PuntoDeVentaClasico" Height="auto"
         Width="auto">
+    
     <Grid Background="LightGray">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -22,14 +23,14 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10,0,0,0">
                 <TextBlock Text="Cliente:" VerticalAlignment="Center" FontWeight="Bold"/>
                 <TextBox Width="50" Margin="5" Text="SYS"/>
                 <Button Width="25" Margin="5">
-                    <Image Source="Images/customer_icon.png" Stretch="Fill"/>
+                    <Image Source="/Images/Iconos/cerrar.png" Stretch="Fill"/>
                 </Button>
                 <Button Width="25" Margin="5">
-                    <Image Source="Images/customer_icon2.png" Stretch="Fill"/>
+                    <Image Source="/Images/Iconos/cerrar.png" Stretch="Fill"/>
                 </Button>
             </StackPanel>
 
@@ -47,10 +48,10 @@
                 <TextBlock Text="Vendedor:" VerticalAlignment="Center" FontWeight="Bold"/>
                 <TextBox Width="50" Margin="5" Text="POS"/>
                 <Button Width="25" Margin="5">
-                    <Image Source="Images/seller_icon.png" Stretch="Fill"/>
+                    <Image Source="/Images/Iconos/cerrar.png" Stretch="Fill"/>
                 </Button>
                 <Button Width="25" Margin="5">
-                    <Image Source="Images/seller_icon2.png" Stretch="Fill"/>
+                    <Image Source="/Images/Iconos/cerrar.png" Stretch="Fill"/>
                 </Button>
             </StackPanel>
         </Grid>
@@ -58,8 +59,8 @@
         <!-- DataGrid -->
         <DataGrid Name="dataGrid" AutoGenerateColumns="False" Grid.Row="1" Margin="10" HeadersVisibility="Column" CanUserAddRows="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Artículo" Binding="{Binding Articulo}" Width="*"/>
-                <DataGridTextColumn Header="QTY" Binding="{Binding Quantity}" Width="Auto"/>
+                <DataGridTextColumn Header="Artículo" Binding="{Binding IdCompuesto}" Width="Auto"/>
+                <DataGridTextColumn Header="QTY" Binding="{Binding Cantidad}" Width="Auto"/>
                 <DataGridTextColumn Header="Descuento" Binding="{Binding Descuento}" Width="Auto"/>
                 <DataGridTextColumn Header="Descripción" Binding="{Binding Descripcion}" Width="*"/>
                 <DataGridTextColumn Header="Lista" Binding="{Binding Lista}" Width="Auto"/>
@@ -69,22 +70,36 @@
         </DataGrid>
 
         <!-- Parte Inferior -->
-        <Grid Grid.Row="2" Margin="10">
+        <Grid Grid.Row="3" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                <TextBlock Text="Unidades:" VerticalAlignment="Center"/>
-                <TextBox Width="100" Margin="5" Text="2.00"/>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Grid.Column="3" Grid.Row="1">
+                <TextBlock Text="Total MN:" VerticalAlignment="Center" FontSize="26" FontWeight="Bold"/>
+                <TextBlock Name="totalTextBlock" Text="0.00" VerticalAlignment="Center" FontSize="26" FontWeight="Bold" Foreground="Green" Margin="5"/>
             </StackPanel>
 
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Column="2">
-                <TextBlock Text="Total MN:" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
-                <TextBlock Text="130.66" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="Green" Margin="5"/>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="1">
+                <TextBox Name="searchBox" Width="250" Height="35" Margin="10,0,0,0" VerticalAlignment="Center" KeyDown="SearchBox_KeyDown"
+                         Background="Black" Foreground="GreenYellow" FontSize="20" FontWeight="Bold" />
             </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right" Grid.Column="3">
+                <TextBlock Text="Unidades:" VerticalAlignment="Center" FontSize="12"/>
+                <TextBox Name="unidadesTextBox" Width="100" Margin="5" Text="0" FontSize="12"/>
+            </StackPanel>
+
+            
         </Grid>
     </Grid>
 </Window>

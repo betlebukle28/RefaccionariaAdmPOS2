@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfSistemaPOS;
+using MongoDB.Bson;
 
 namespace WpfSistemaPOS2
 {
@@ -20,32 +22,36 @@ namespace WpfSistemaPOS2
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private readonly MongoDBService _mongoDBService;
+
         public MainWindow()
         {
             InitializeComponent();
+            _mongoDBService = new MongoDBService();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
             string usuario = txtUsuario.Text;
             string password = txtPassword.Password;
 
-            if (usuario == "Admin" && password == "Admin")
+
+
+            bool isValidUser = await _mongoDBService.VerifyUserCredentialsAsync(usuario, password);
+
+            if (isValidUser)
             {
-                MessageBox.Show("Login exitoso", "Éxito", MessageBoxButton.OK, MessageBoxImage.Information);
+               // MessageBox.Show("Login exitoso", "Éxito", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 // Cerrar la ventana actual y abrir la nueva
-                //MainWindow2 mainWindow2 = new MainWindow2();
-                //mainWindow2.Show();
-
-                //Cerrar la ventana actual y abrir la nueva
-                Home home = new Home();
+                Home home = new();
                 home.Show();
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Usuario o contraseña incorrectos ", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

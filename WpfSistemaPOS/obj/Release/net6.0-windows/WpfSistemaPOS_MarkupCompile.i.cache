@@ -1,0 +1,20 @@
+﻿WpfSistemaPOS
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Release\net6.0-windows\
+WpfSistemaPOS
+none
+false
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
+C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\App.xaml
+8647359190
+
+14265229805
+205-1610987437
+BusquedaArticulo.xaml;GestionArticulos.xaml;GestionClientes.xaml;Home.xaml;MainWindow.xaml;NuevaClave.xaml;Presentaciones.xaml;PuntoDeVentaClasico.xaml;
+
+True
+

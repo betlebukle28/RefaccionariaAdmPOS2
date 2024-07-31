@@ -1,16 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
   <ItemGroup>
     <ApplicationDefinition Update="App.xaml">
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="BusquedaArticulo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GestionArticulos.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="GestionClientes.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Home.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NuevaClave.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Presentaciones.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="PuntoDeVentaClasico.xaml.cs">
@@ -18,6 +32,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="BusquedaArticulo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GestionArticulos.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="GestionClientes.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -25,6 +45,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NuevaClave.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Presentaciones.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PuntoDeVentaClasico.xaml">

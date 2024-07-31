@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\App.xaml
-6-976489996
+8647359190
 
-8-1326932798
-1941709816142
-GestionClientes.xaml;Home.xaml;MainWindow.xaml;NuevaClave.xaml;Presentaciones.xaml;PuntoDeVentaClasico.xaml;
+121181173234
+205-1610987437
+BusquedaArticulo.xaml;GestionArticulos.xaml;GestionClientes.xaml;Home.xaml;MainWindow.xaml;NuevaClave.xaml;Presentaciones.xaml;PuntoDeVentaClasico.xaml;
 
-False
+True
 
