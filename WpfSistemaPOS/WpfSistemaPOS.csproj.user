@@ -9,6 +9,15 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Articulos\ConsultarArticulo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Articulos\EliminarArticulo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Articulos\ModificarArticulo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="BusquedaArticulo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -32,6 +41,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Articulos\ConsultarArticulo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Articulos\EliminarArticulo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Articulos\ModificarArticulo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="BusquedaArticulo.xaml">
       <SubType>Designer</SubType>
     </Page>

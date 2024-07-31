@@ -48,3 +48,9 @@ C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\Wpf
 C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Debug\net6.0-windows\WpfSistemaPOS.pdb
 C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Debug\net6.0-windows\WpfSistemaPOS.genruntimeconfig.cache
 C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Debug\net6.0-windows\ref\WpfSistemaPOS.dll
+C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Debug\net6.0-windows\Articulos\ConsultarArticulo.g.cs
+C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Debug\net6.0-windows\Articulos\EliminarArticulo.g.cs
+C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Debug\net6.0-windows\Articulos\ModificarArticulo.g.cs
+C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Debug\net6.0-windows\Articulos\ConsultarArticulo.baml
+C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Debug\net6.0-windows\Articulos\EliminarArticulo.baml
+C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Debug\net6.0-windows\Articulos\ModificarArticulo.baml

@@ -23,5 +23,18 @@ namespace WpfSistemaPOS
         {
             InitializeComponent();
         }
+
+        private void BtnAceptar_Click(object sender, RoutedEventArgs e)
+        {
+            // Lógica para guardar la nueva clave
+            MessageBox.Show("Nueva clave guardada con éxito.");
+            this.Close();
+        }
+
+        private void BtnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }
