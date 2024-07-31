@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +22,14 @@ namespace WpfSistemaPOS
         public GestionClientes()
         {
             InitializeComponent();
+
+            private void BtnPresentaciones_Click(object sender, RoutedEventArgs e)
+            {
+                Presentaciones presentacionesWindow = new Presentaciones();
+                presentacionesWindow.Show();
+                this.Close(); // Cierra la ventana actual si es necesario
+            }
+
         }
     }
 }

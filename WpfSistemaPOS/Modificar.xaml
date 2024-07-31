@@ -1,0 +1,8 @@
+﻿<Window x:Class="WpfSistemaPOS.Modificar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Modificar" Height="450" Width="800">
+    <Grid>
+        <!-- Contenido de la ventana Modificar -->
+    </Grid>
+</Window>

@@ -53,7 +53,7 @@ namespace WpfSistemaPOS {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfSistemaPOS;component/gestionclientes.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfSistemaPOS;V1.0.0.0;component/gestionclientes.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\GestionClientes.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

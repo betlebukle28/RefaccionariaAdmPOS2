@@ -1,4 +1,4 @@
-﻿<Window x:Class="WpfSistemaPOS.NuevaClave"
+<Window x:Class="WpfSistemaPOS.NuevaClave"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -31,11 +31,9 @@
         </DataGrid>
 
         <!-- Botones -->
-        <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Top">
-            <Button Content="Nueva clave (F9)" Width="120" Margin="0,5"/>
-            <Button Content="Consultar" Width="120" Margin="0,5"/>
-            <Button Content="Modificar" Width="120" Margin="0,5"/>
-            <Button Content="Eliminar" Width="120" Margin="0,5"/>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <Button Content="Aceptar" Click="BtnAceptar_Click" Width="100" Margin="5"/>
+            <Button Content="Cancelar" Click="BtnCancelar_Click" Width="100" Margin="5"/>
         </StackPanel>
     </Grid>
 </Window>

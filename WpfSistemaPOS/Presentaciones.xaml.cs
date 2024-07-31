@@ -23,5 +23,32 @@ namespace WpfSistemaPOS
         {
             InitializeComponent();
         }
+        private void BtnNuevaClave_Click(object sender, RoutedEventArgs e)
+        {
+            NuevaClave nuevaClaveWindow = new NuevaClave();
+            nuevaClaveWindow.Show();
+            this.Close();
+        }
+
+        private void BtnConsultar_Click(object sender, RoutedEventArgs e)
+        {
+            Consultar consultarWindow = new Consultar();
+            consultarWindow.Show();
+            this.Close();
+        }
+
+        private void BtnModificar_Click(object sender, RoutedEventArgs e)
+        {
+            Modificar modificarWindow = new Modificar();
+            modificarWindow.Show();
+            this.Close();
+        }
+
+        private void BtnEliminar_Click(object sender, RoutedEventArgs e)
+        {
+            Eliminar eliminarWindow = new Eliminar();
+            eliminarWindow.Show();
+            this.Close();
+        }
     }
 }

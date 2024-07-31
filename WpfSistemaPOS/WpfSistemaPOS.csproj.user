@@ -9,6 +9,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Update="BusquedaArticulo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -16,22 +17,39 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="GestionClientes.xaml.cs">
+=======
+    <Compile Update="Consultar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Eliminar.xaml.cs">
+>>>>>>> 69887d1 (Funciones)
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Home.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Update="Modificar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+>>>>>>> 69887d1 (Funciones)
     <Compile Update="NuevaClave.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Presentaciones.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="PuntoDeVentaClasico.xaml.cs">
+=======
+    <Compile Update="Window1.xaml.cs">
+>>>>>>> 69887d1 (Funciones)
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Page Update="BusquedaArticulo.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -39,6 +57,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="GestionClientes.xaml">
+=======
+    <Page Update="Consultar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Eliminar.xaml">
+>>>>>>> 69887d1 (Funciones)
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Home.xaml">
@@ -47,14 +71,23 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+<<<<<<< HEAD
+=======
+    <Page Update="Modificar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+>>>>>>> 69887d1 (Funciones)
     <Page Update="NuevaClave.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Presentaciones.xaml">
       <SubType>Designer</SubType>
     </Page>
+<<<<<<< HEAD
     <Page Update="PuntoDeVentaClasico.xaml">
       <SubType>Designer</SubType>
     </Page>
+=======
+>>>>>>> 69887d1 (Funciones)
   </ItemGroup>
 </Project>

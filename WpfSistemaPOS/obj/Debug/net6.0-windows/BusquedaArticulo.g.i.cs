@@ -61,7 +61,7 @@ namespace WpfSistemaPOS {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfSistemaPOS;component/busquedaarticulo.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfSistemaPOS;V1.0.0.0;component/busquedaarticulo.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\BusquedaArticulo.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
