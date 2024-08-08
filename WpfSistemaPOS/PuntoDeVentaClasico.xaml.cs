@@ -4,6 +4,8 @@ using System.Windows;
 using System.Windows.Input;
 using WpfSistemaPOS2;
 using WpfSistemaPOS.CS;
+using WpfSistemaPOS.PuntoDeVenta;
+using System;
 
 namespace WpfSistemaPOS
 {
@@ -20,6 +22,32 @@ namespace WpfSistemaPOS
             _mongoDBService = new MongoDBService();
         }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.Focus();  
+        }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.F5)
+            {
+                Console.WriteLine("F5 presionado");
+                AbrirCajaDeCobro();
+            }
+        }
+
+        private void AbrirCajaDeCobro()
+        {
+            double total = CalculateTotal();  // Asumiendo que tienes un método para calcular el total.
+            var cajaDeCobro = new CajaDeCobro(total);  // Pasa el total al constructor de CajaDeCobro.
+            cajaDeCobro.ShowDialog();
+        }
+
+        private double CalculateTotal()
+        {
+            return dataGrid.Items.OfType<Articulo>().Sum(articulo => articulo.Precio * articulo.Cantidad);
+        }
+
         private async void SearchBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
@@ -30,7 +58,7 @@ namespace WpfSistemaPOS
                 var itemByIdCompuesto = await _mongoDBService.GetItemByIdCompuestoAsync(searchText);
                 if (itemByIdCompuesto != null)
                 {
-                    double Importeaux = itemByIdCompuesto.GetValue("Precio").ToDouble();
+                    //double Importeaux = itemByIdCompuesto.GetValue("Precio").ToDouble();
                     AddItemToGrid(new Articulo
                     {
                         IdCompuesto = itemByIdCompuesto.GetValue("IdCompuesto").AsString,
@@ -99,7 +127,7 @@ namespace WpfSistemaPOS
             totalTextBlock.Text = totalMN.ToString("F2");
         }
 
-        private async void Pagina_Inicio(object sender, RoutedEventArgs e)
+        private void Pagina_Inicio(object sender, RoutedEventArgs e)
         {
             Home home = new();
             home.Show();

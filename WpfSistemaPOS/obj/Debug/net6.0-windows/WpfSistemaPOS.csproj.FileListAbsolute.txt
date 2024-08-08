@@ -54,3 +54,5 @@ C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\Wpf
 C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Debug\net6.0-windows\Articulos\ConsultarArticulo.baml
 C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Debug\net6.0-windows\Articulos\EliminarArticulo.baml
 C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Debug\net6.0-windows\Articulos\ModificarArticulo.baml
+C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Debug\net6.0-windows\PuntoDeVenta\CajaDeCobro.g.cs
+C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\obj\Debug\net6.0-windows\PuntoDeVenta\CajaDeCobro.baml

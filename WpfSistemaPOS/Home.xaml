@@ -5,46 +5,93 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfSistemaPOS2"
         mc:Ignorable="d"
-        Title="Home" Height="auto"
-        Width="auto">
-    <Grid Background="LightGray">
+        Title="Home" Height="auto" Width="auto">
+    <Window.Resources>
+        <Style x:Key="TileButton" TargetType="Button">
+            <Setter Property="Height" Value="Auto"/>
+            <Setter Property="Margin" Value="0"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="#E6D2D2"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Cursor" Value="Hand"  />
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="Red" />
+
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Carbono.jpg" Stretch="UniformToFill" />
+        </Grid.Background>
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
-        <Canvas Background="Gray"></Canvas>
-        <Grid Background="Gray" Grid.Column="0" Margin="10">
-            <StackPanel>
-                <Button Content="Punto de venta" Height="50" Margin="5" Click="Pantalla_PuntoDeVenta"/>
-                <Button Content="COMPRAS" Height="50" Margin="5"/>
-                <Button Content="INVENTARIO" Height="50" Margin="5"/>
-                <Button Content="ETIQUETAS" Height="50" Margin="5"/>
-                <Button Content="CLIENTES" Height="50" Margin="5" Click="Pantalla_Clientes"/>
 
+        <StackPanel Grid.Column="0" VerticalAlignment="Center">
+            <StackPanel  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,53">
+                <TextBlock Text="Bienvenido al Sistema POS" FontSize="24" FontWeight="Bold" Foreground="White" Padding="10" HorizontalAlignment="Center" TextAlignment="Right"/>
+                <TextBlock Text="Refaccionaria Aleman" FontSize="24" FontWeight="Bold" Foreground="White" Padding="10" HorizontalAlignment="Center" TextAlignment="Right"/>
+                <!--<Image Source="/car_logo_SN_fondo.png" Height="150" />-->
             </StackPanel>
+        </StackPanel>
+
+        <!-- Menú Lateral -->
+        <Grid  Grid.Column="1" >
+            <Grid.RowDefinitions >
+                <RowDefinition Height="3*" />
+                <!-- Punto de Venta ocupando dos espacios -->
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Botón Punto de Venta -->
+            <Button Content="Punto de Venta" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource TileButton}" AutomationProperties.IsOffscreenBehavior="Onscreen" IsCancel="True" Click="Pantalla_PuntoDeVenta" >
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.Background>
+                    <ImageBrush ImageSource="/Morado.jpg" Stretch="UniformToFill" TileMode="None"/>
+                </Button.Background>
+            </Button>
+
+            <!-- Otros Botones -->
+            <Button Content="Artículos" Grid.Row="0" Grid.Column="2" Style="{StaticResource TileButton}" Click="Pantalla_Articulo">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Azul.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Inventario" Grid.Row="1" Grid.Column="0" Style="{StaticResource TileButton}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Verde_2.jpg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Clientes" Grid.Row="1" Grid.Column="1" Style="{StaticResource TileButton}" Click="Pantalla_Clientes">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Naranja.jpg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Reportes" Grid.Row="1" Grid.Column="2" Style="{StaticResource TileButton}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Verde.jpg"/>
+                </Button.Background>
+                
+            </Button>
         </Grid>
 
-        <Grid Grid.Column="1" Margin="10">
-            <StackPanel HorizontalAlignment="Left">
-                <Button Content="NUEVA COMPRA" Width="200" Height="50" Margin="5"/>
-                <Button Content="ARTICULOS" Width="200" Height="50" Margin="5" Click="Pantalla_Articulo"/>
-                <Button Content="VEHICULOS" Width="200" Height="50" Margin="5"/>
-                <Button Content="ENTRADAS/SALIDAS DE INV." Width="200" Height="50" Margin="5"/>
-            </StackPanel>
-
-            <Grid VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="10" Width="200" Height="200">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="50"/>
-                </Grid.RowDefinitions>
-
-                <Border Background="Gray" Grid.Row="0"/>
-
-                <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
-                    <Button Content="IMPRIMIR" Width="100" Height="30" Margin="5"/>
-                    <Button Content="LIMPIAR" Width="100" Height="30" Margin="5"/>
-                </StackPanel>
-            </Grid>
-        </Grid>
+        <!-- Área de Contenido Principal -->
+        <!--<StackPanel Background="#F7ECEC" Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock Text="Bienvenido al Sistema POS" FontSize="24" FontWeight="Bold" Foreground="#A17475" Padding="10" HorizontalAlignment="Center"/>
+        </StackPanel>-->
     </Grid>
 </Window>

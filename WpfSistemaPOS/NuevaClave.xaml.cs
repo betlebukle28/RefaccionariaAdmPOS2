@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfSistemaPOS2;
 
 namespace WpfSistemaPOS
 {
@@ -33,6 +34,8 @@ namespace WpfSistemaPOS
 
         private void BtnCancelar_Click(object sender, RoutedEventArgs e)
         {
+            Presentaciones presentaciones = new ();
+            presentaciones.Show();
             this.Close();
         }
 

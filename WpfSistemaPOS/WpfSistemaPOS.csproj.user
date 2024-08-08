@@ -39,6 +39,9 @@
     <Compile Update="PuntoDeVentaClasico.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="PuntoDeVenta\CajaDeCobro.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Articulos\ConsultarArticulo.xaml">
@@ -72,6 +75,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PuntoDeVentaClasico.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PuntoDeVenta\CajaDeCobro.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

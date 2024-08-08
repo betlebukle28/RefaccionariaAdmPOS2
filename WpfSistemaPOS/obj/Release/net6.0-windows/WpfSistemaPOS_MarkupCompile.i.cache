@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 C:\Users\axel_\Documents\Universidad\9 Cuatrimestre\SistemaPOS\WpfSistemaPOS\WpfSistemaPOS\App.xaml
-8647359190
+121698514995
 
-14265229805
+18-1808679345
 205-1610987437
-BusquedaArticulo.xaml;GestionArticulos.xaml;GestionClientes.xaml;Home.xaml;MainWindow.xaml;NuevaClave.xaml;Presentaciones.xaml;PuntoDeVentaClasico.xaml;
+Articulos\ConsultarArticulo.xaml;Articulos\EliminarArticulo.xaml;Articulos\ModificarArticulo.xaml;BusquedaArticulo.xaml;GestionArticulos.xaml;GestionClientes.xaml;Home.xaml;MainWindow.xaml;NuevaClave.xaml;Presentaciones.xaml;PuntoDeVentaClasico.xaml;PuntoDeVenta\CajaDeCobro.xaml;
 
 True
 

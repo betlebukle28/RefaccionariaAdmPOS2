@@ -8,7 +8,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Azul.jpg" />
+    <None Remove="Carbono.jpg" />
+    <None Remove="car_logo.png" />
+    <None Remove="car_logo_SN_fondo.png" />
+    <None Remove="cerrar.png" />
+    <None Remove="Morado.jpg" />
+    <None Remove="Naranja.jpg" />
+    <None Remove="TaBien.jpg" />
+    <None Remove="Verde.jpg" />
+    <None Remove="Verde_2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="2.27.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Azul.jpg" />
+    <Resource Include="Carbono.jpg" />
+    <Resource Include="car_logo.png" />
+    <Resource Include="car_logo_SN_fondo.png" />
+    <Resource Include="cerrar.png" />
+    <Resource Include="Morado.jpg" />
+    <Resource Include="Naranja.jpg" />
+    <Resource Include="TaBien.jpg" />
+    <Resource Include="Verde.jpg" />
+    <Resource Include="Verde_2.jpg" />
   </ItemGroup>
 
 </Project>

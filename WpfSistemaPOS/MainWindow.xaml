@@ -20,7 +20,7 @@
 
                 <TextBlock Text="REFACCIONARIA ALEMAN" FontSize="18" HorizontalAlignment="Center" Margin="10" FontWeight="Bold"/>
 
-                <Image Source="/Images/Logo/car_logo.png" Width="250" Height="120" HorizontalAlignment="Center" Grid.Row="1"/>
+                <Image Source="/car_logo.png" Width="250" Height="120" HorizontalAlignment="Center" Grid.Row="1"/>
 
                 <StackPanel Grid.Row="2" Margin="25,9.896,10,9.696">
                     <TextBlock FontSize="16" Text="Usuario" />

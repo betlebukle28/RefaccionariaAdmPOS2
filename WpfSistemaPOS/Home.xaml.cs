@@ -41,8 +41,8 @@ namespace WpfSistemaPOS2
 
         private void Pantalla_Articulo(object sender, RoutedEventArgs e)
         {
-            NuevaClave nuevaClave = new();
-            nuevaClave.Show();
+            Presentaciones presentaciones = new();
+            presentaciones.Show();
             this.Close();
         }
     }
