@@ -21,6 +21,9 @@
     <Compile Update="BusquedaArticulo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Clientes\BuscarCliente.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="GestionArticulos.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -54,6 +57,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="BusquedaArticulo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Clientes\BuscarCliente.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="GestionArticulos.xaml">

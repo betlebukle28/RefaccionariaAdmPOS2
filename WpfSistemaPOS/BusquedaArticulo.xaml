@@ -6,8 +6,43 @@
         xmlns:local="clr-namespace:WpfSistemaPOS"
         mc:Ignorable="d"
         Title="BusquedaArticulo" Height="450" Width="800">
+
+    <Window.Resources>
+        <Style x:Key="WatermarkedTextBox" TargetType="TextBox">
+            <Setter Property="Foreground" Value="Gray"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Style.Triggers>
+                <Trigger Property="IsFocused" Value="True">
+                    <Setter Property="Foreground" Value="Black"/>
+                    <Setter Property="FontStyle" Value="Normal"/>
+                </Trigger>
+                
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
     <Grid>
-        <DataGrid Name="resultsGrid" AutoGenerateColumns="False" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10" Height="250">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Filtros -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <TextBlock Text="Año" FontSize="16" />
+            <TextBox Width="100" Margin="5"  x:Name="txtYear" Style="{StaticResource WatermarkedTextBox}" Tag="Año"/>
+            <TextBlock Text="Modelo" FontSize="16"/>
+            <TextBox Width="100" Margin="5" x:Name="txtModel" Style="{StaticResource WatermarkedTextBox}" Tag="Modelo"/>
+            <TextBlock Text="Motor" FontSize="16"/>
+            <TextBox Width="100" Margin="5" x:Name="txtEngine" Style="{StaticResource WatermarkedTextBox}" Tag="Motor"/>
+            <TextBlock Text="Version" FontSize="16" />
+            <TextBox Width="100" Margin="5" x:Name="txtVersion" Style="{StaticResource WatermarkedTextBox}" Tag="Versión"/>
+            <Button Content="Buscar" Width="100" Margin="5" Click="Buscar_Click"/>
+        </StackPanel>
+
+        <!-- DataGrid para mostrar los resultados -->
+        <DataGrid Grid.Row="1" Name="resultsGrid" AutoGenerateColumns="False" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10" Height="250">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Artículo" Binding="{Binding IdCompuesto}" Width="Auto"/>
                 <DataGridTextColumn Header="Descripción" Binding="{Binding Descripcion}" Width="*"/>
@@ -16,10 +51,10 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">
+        <!-- Botones de Acción -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">
             <Button Content="Aceptar" Width="100" Margin="5" Click="Aceptar_Click"/>
             <Button Content="Cancelar" Width="100" Margin="5" Click="Cancelar_Click"/>
-            <Button Content="Existencia" Width="100" Margin="5"/>
         </StackPanel>
     </Grid>
 </Window>

@@ -5,50 +5,55 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfSistemaPOS.PuntoDeVenta"
         mc:Ignorable="d"
-        Title="CajaDeCobro" Height="450" Width="800">
+        Title="CajaDeCobro" Height="550" Width="450">
     <Grid Margin="10">
         <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Text="Total:" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center"/>
-        <TextBox Name="txtTotal" Grid.Row="0" Grid.Column="2" Margin="5"/>
+        <TextBlock Text="Total:" FontSize="14" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center"/>
+        <TextBox Name="txtTotal" FontSize="14" Width="Auto" Grid.Row="1" Grid.Column="2" Margin="5"/>
 
-        <TextBlock Text="Vendedor:" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center"/>
-        <TextBox Name="txtVendedor" Grid.Row="1" Grid.Column="2" Margin="5"/>
+        <TextBlock Text="Vendedor:" FontSize="14" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center"/>
+        <TextBox Name="txtVendedor" FontSize="14" Width="Auto" Grid.Row="3" Grid.Column="2" Margin="5"/>
 
-        <TextBlock Text="Cliente:" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center"/>
-        <TextBox Name="txtCliente" Grid.Row="2" Grid.Column="2" Margin="5"/>
+        <TextBlock Text="Cliente:" FontSize="14" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center"/>
+        <TextBox Name="txtCliente" FontSize="14" Width="Auto" Grid.Row="5" Grid.Column="2" Margin="5"/>
 
-        <TextBlock Text="Tipo de pago:" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center"/>
-        <ComboBox Name="cbTipoPago" Grid.Row="3" Grid.Column="2" Margin="5" SelectionChanged="CbTipoPago_SelectionChanged">
+        <TextBlock Text="Tipo de pago:" FontSize="14" Grid.Row="7" Grid.Column="1" VerticalAlignment="Center"/>
+        <ComboBox Name="cbTipoPago" Grid.Row="7" FontSize="14" Grid.Column="2" Margin="5" SelectionChanged="CbTipoPago_SelectionChanged">
             <ComboBoxItem Content="Efectivo"/>
             <ComboBoxItem Content="Tarjeta"/>
             <ComboBoxItem Content="PayPal"/>
         </ComboBox>
 
-        <TextBlock Text="Pago con:" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center"/>
-        <TextBox Name="txtPagoCon" Grid.Row="4" Grid.Column="2" Margin="5" IsEnabled="False"/>
+        <TextBlock Text="Pago con:" FontSize="14" Grid.Row="9" Grid.Column="1" VerticalAlignment="Center"/>
+        <TextBox Name="txtPagoCon" FontSize="14" Grid.Row="9" Grid.Column="2" Margin="5" IsEnabled="False"/>
 
-        <TextBlock Text="Cambio:" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center"/>
-        <TextBlock Name="txtCambio" Grid.Row="5" Grid.Column="2" Margin="5"/>
+        <TextBlock Text="Cambio:" FontSize="14" Grid.Row="11" Grid.Column="1" VerticalAlignment="Center"/>
+        <TextBlock Name="txtCambio" FontSize="14" Grid.Row="11" Grid.Column="2" Margin="5"/>
 
-        <Button Content="Aceptar" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" Click="Aceptar_Click"/>
-        <Button Content="Cancelar" Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="2" Margin="5" Click="Cancelar_Click"/>
+        <Button Content="Aceptar" FontSize="14" Grid.Row="13" Grid.Column="1" Grid.ColumnSpan="2" Margin="5" Click="Aceptar_Click"/>
+        <Button Content="Cancelar" FontSize="14" Grid.Row="14" Grid.Column="1" Grid.ColumnSpan="2" Margin="5" Click="Cancelar_Click"/>
     </Grid>
 </Window>

@@ -4,6 +4,30 @@
              xmlns:local="clr-namespace:WpfSistemaPOS2"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="PlaceholderTextBox" TargetType="TextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Grid>
+                            <TextBox x:Name="textBox" 
+                                     Text="{Binding Text, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                     Background="Transparent"/>
+                            <TextBlock x:Name="placeholder" 
+                                       Text="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" 
+                                       Foreground="Gray" 
+                                       Margin="5,0,0,0"
+                                       IsHitTestVisible="False" 
+                                       VerticalAlignment="Center"
+                                       Visibility="Collapsed"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="Text" Value="">
+                                <Setter TargetName="placeholder" Property="Visibility" Value="Visible"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Application.Resources>
 </Application>

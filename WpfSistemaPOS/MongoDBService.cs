@@ -78,5 +78,70 @@ namespace WpfSistemaPOS
                          Builders<BsonDocument>.Filter.Regex("Descripcion", new BsonRegularExpression(text, "i"));
             return await collection.Find(filter).ToListAsync();
         }
+
+        public async Task<List<BsonDocument>> SearchArticulosAsync(string year, string model, string engine, string version)
+        {
+            var regexYear = new BsonRegularExpression(year, "i"); // "i" para insensibilidad a mayúsculas
+            var regexModel = new BsonRegularExpression(model, "i");
+            var regexEngine = new BsonRegularExpression(engine, "i");
+            var regexVersion = new BsonRegularExpression(version, "i");
+
+            var pipeline = new BsonDocument[]
+            {
+            new BsonDocument("$match",
+                new BsonDocument
+                {
+                    { "Año", regexYear },
+                    { "Modelo", regexModel },
+                    { "Motor", regexEngine },
+                    { "Version", regexVersion }
+                }),
+            new BsonDocument("$lookup",
+                new BsonDocument
+                {
+                    { "from", "Tbl_Compatibilidad" },
+                    { "localField", "_id" },
+                    { "foreignField", "Clv_Vehiculo" },
+                    { "as", "compatibilidad" }
+                }),
+            new BsonDocument("$unwind", "$compatibilidad"),
+            new BsonDocument("$lookup",
+                new BsonDocument
+                {
+                    { "from", "Articulos" },
+                    { "localField", "compatibilidad.Clv_Articulo" },
+                    { "foreignField", "_id" },
+                    { "as", "articulos" }
+                }),
+            new BsonDocument("$unwind", "$articulos"),
+            new BsonDocument("$replaceRoot",
+                new BsonDocument("newRoot", "$articulos"))
+                };
+
+            var collection = _database.GetCollection<BsonDocument>("Vehiculos");
+            using (var cursor = await collection.AggregateAsync<BsonDocument>(pipeline))
+            {
+                return await cursor.ToListAsync();
+            }
+        }
+
+        public async Task<List<BsonDocument>> SearchClientesAsync(string searchText)
+        {
+            var collection = GetCollection("Clientes");
+            var filter = Builders<BsonDocument>.Filter.Or(
+                Builders<BsonDocument>.Filter.Regex("Clv_Cliente", new BsonRegularExpression(searchText, "i")),
+                Builders<BsonDocument>.Filter.Regex("NombreCliente", new BsonRegularExpression(searchText, "i"))
+            );
+            return await collection.Find(filter).ToListAsync();
+        }
+
+        public IMongoCollection<T> GetCollection<T>(string collectionName)
+        {
+            return _database.GetCollection<T>(collectionName);
+        }
+
+        
+
+
     }
 }

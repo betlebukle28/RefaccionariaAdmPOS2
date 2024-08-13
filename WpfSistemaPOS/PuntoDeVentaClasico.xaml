@@ -28,9 +28,10 @@
 
             <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10,0,0,0">
                 <TextBox Width="100" FontSize="16" Text="Cliente" VerticalAlignment="Center" FontWeight="Bold"/>
-                <TextBox Width="100" FontSize="16" Margin="5" Text="SYS"/>
-                <Button Width="25" Margin="5">
-                    <Image Source="/cerrar.png" Stretch="Fill"/>
+                <TextBox Width="100" Name="txtClvCliente" FontSize="16" Margin="5" IsReadOnly="True"/> 
+                <!-- AQUI VA LA CLAVE DEL CLIENTE-->
+                <Button Width="25" Margin="5" Click="Buscar_Cliente">
+                    <Image Source="/buscar.png" Stretch="Fill"/>
                 </Button>
                 <Button Width="25" Margin="5">
                     <Image Source="/cerrar.png" Stretch="Fill"/>
@@ -49,13 +50,13 @@
 
             <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Grid.Row="1" Margin="10,30,0,0">
                 <TextBox Width="100" FontSize="16" Text="Vendedor" VerticalAlignment="Center" FontWeight="Bold"/>
-                <TextBox Width="100" FontSize="16" Margin="5" Text="POS"/>
-                <Button Width="25" Margin="5">
+                <TextBox Width="100" FontSize="16" Margin="5" Text="SYS" IsReadOnly="True"/>
+                <!-- AQUI VA EL NOMBRE DEL VENDEDOR (USUARIO)-->
+                <!--<Button Width="25" Margin="5">
+                </Button>-->
+                <!--<Button Width="25" Margin="5">
                     <Image Source="/cerrar.png" Stretch="Fill"/>
-                </Button>
-                <Button Width="25" Margin="5">
-                    <Image Source="/cerrar.png" Stretch="Fill"/>
-                </Button>
+                </Button>-->
             </StackPanel>
         </Grid>
 
@@ -78,7 +79,6 @@
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Artículo" Binding="{Binding IdCompuesto}" Width="Auto"/>
                     <DataGridTextColumn Header="QTY" Binding="{Binding Cantidad}" Width="Auto"/>
-                    <DataGridTextColumn Header="Descuento" Binding="{Binding Descuento}" Width="Auto"/>
                     <DataGridTextColumn Header="Descripción" Binding="{Binding Descripcion}" Width="*"/>
                     <DataGridTextColumn Header="Lista" Binding="{Binding Lista}" Width="Auto"/>
                     <DataGridTextColumn Header="Precio" Binding="{Binding Precio}" Width="Auto"/>

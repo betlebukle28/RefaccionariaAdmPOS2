@@ -4,8 +4,11 @@ using System.Windows;
 using System.Windows.Input;
 using WpfSistemaPOS2;
 using WpfSistemaPOS.CS;
+
 using WpfSistemaPOS.PuntoDeVenta;
 using System;
+using MongoDB.Bson;
+using WpfSistemaPOS.Clientes;
 
 namespace WpfSistemaPOS
 {
@@ -15,16 +18,18 @@ namespace WpfSistemaPOS
     public partial class PuntoDeVentaClasico : Window
     {
         private readonly MongoDBService _mongoDBService;
+        private string NombreCliente = "";
 
         public PuntoDeVentaClasico()
         {
             InitializeComponent();
             _mongoDBService = new MongoDBService();
+            
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            this.Focus();  
+            this.Focus();
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
@@ -39,7 +44,9 @@ namespace WpfSistemaPOS
         private void AbrirCajaDeCobro()
         {
             double total = CalculateTotal();  // Asumiendo que tienes un método para calcular el total.
-            var cajaDeCobro = new CajaDeCobro(total);  // Pasa el total al constructor de CajaDeCobro.
+            string Cliente = NombreCliente; //txtClvCliente.Text;
+            string Vendedor = "SYS";
+            var cajaDeCobro = new CajaDeCobro(total, Cliente, Vendedor);  // Pasa el total al constructor de CajaDeCobro.
             cajaDeCobro.ShowDialog();
         }
 
@@ -58,16 +65,15 @@ namespace WpfSistemaPOS
                 var itemByIdCompuesto = await _mongoDBService.GetItemByIdCompuestoAsync(searchText);
                 if (itemByIdCompuesto != null)
                 {
-                    //double Importeaux = itemByIdCompuesto.GetValue("Precio").ToDouble();
                     AddItemToGrid(new Articulo
                     {
                         IdCompuesto = itemByIdCompuesto.GetValue("IdCompuesto").AsString,
                         Descripcion = itemByIdCompuesto.GetValue("Descripcion").AsString,
                         Precio = itemByIdCompuesto.GetValue("Precio").ToDouble(),
                         Existencia = itemByIdCompuesto.GetValue("Existencia").ToInt32(),
-                        Cantidad = 1, // Inicia con una cantidad de 1
+                        Cantidad = 1,
                         Importe = itemByIdCompuesto.GetValue("Precio").ToDouble(),
-                    }) ;
+                    });
                 }
                 else
                 {
@@ -75,13 +81,13 @@ namespace WpfSistemaPOS
                     var itemsByPartialText = await _mongoDBService.GetItemsByPartialIdOrDescriptionAsync(searchText);
                     if (itemsByPartialText.Any())
                     {
-                        var busquedaArticuloWindow = new BusquedaArticulo(itemsByPartialText);
+                        var busquedaArticuloWindow = new BusquedaArticulo(itemsByPartialText, _mongoDBService); // Asegúrate de pasar _mongoDBService aquí
                         if (busquedaArticuloWindow.ShowDialog() == true)
                         {
                             var selectedItem = busquedaArticuloWindow.SelectedItem;
                             if (selectedItem != null)
                             {
-                                selectedItem.Cantidad = 1; // Inicia con una cantidad de 1
+                                selectedItem.Cantidad = 1;
                                 selectedItem.Importe = selectedItem.Precio;
                                 AddItemToGrid(selectedItem);
                             }
@@ -94,6 +100,7 @@ namespace WpfSistemaPOS
                 }
             }
         }
+
 
         private void AddItemToGrid(Articulo item)
         {
@@ -133,7 +140,20 @@ namespace WpfSistemaPOS
             home.Show();
             this.Close();
         }
-    }
 
-   
+        private void Buscar_Cliente(object sender, RoutedEventArgs e)
+        {
+            var buscarClienteWindow = new BuscarCliente(_mongoDBService);
+            if (buscarClienteWindow.ShowDialog() == true)
+            {
+                var selectedCliente = buscarClienteWindow.SelectedCliente;
+                if (selectedCliente != null)
+                {
+                    txtClvCliente.Text = selectedCliente.Clv_Cliente; // Usamos directamente la propiedad Clv_Cliente del objeto Cliente
+                    NombreCliente = selectedCliente.NombreCliente;
+                }
+            }
+        }
+
+    }
 }

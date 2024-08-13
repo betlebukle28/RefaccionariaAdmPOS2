@@ -48,6 +48,18 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.27.0, )"
+            },
+            "PDFsharp": {
+              "target": "Package",
+              "version": "[6.2.0-preview-1, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.4, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[8.0.5, )"
             }
           },
           "imports": [
