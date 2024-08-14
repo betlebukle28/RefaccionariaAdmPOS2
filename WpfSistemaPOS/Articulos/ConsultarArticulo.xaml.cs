@@ -23,5 +23,27 @@ namespace WpfSistemaPOS.Articulos
         {
             InitializeComponent();
         }
+        private void Consultar_Click(object sender, RoutedEventArgs e)
+        {
+            // Simulación de búsqueda de artículo
+            var articulo = new
+            {
+                IdCompuesto = "AB-000001-01",
+                Descripcion = "Artículo de prueba",
+                Precio = 10,
+                Existencia = 15,
+                Categoria = "Pieza"
+            };
+
+            // Mostrar en ListView
+            lvResultados.Items.Clear();
+            lvResultados.Items.Add(articulo);
+
+            // Simulación de compatibilidad
+            lbCompatibilidad.Items.Clear();
+            lbCompatibilidad.Items.Add("Vehículo A");
+            lbCompatibilidad.Items.Add("Vehículo B");
+        }
+
     }
 }

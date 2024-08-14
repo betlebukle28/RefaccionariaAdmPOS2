@@ -23,5 +23,12 @@ namespace WpfSistemaPOS.Articulos
         {
             InitializeComponent();
         }
+
+        private void GuardarCambios_Click(object sender, RoutedEventArgs e)
+        {
+            // Aquí agregas la lógica para guardar los cambios en la base de datos
+            MessageBox.Show("Cambios guardados exitosamente.");
+        }
+
     }
 }

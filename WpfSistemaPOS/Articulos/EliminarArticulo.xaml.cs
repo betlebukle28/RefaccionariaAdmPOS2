@@ -23,5 +23,12 @@ namespace WpfSistemaPOS.Articulos
         {
             InitializeComponent();
         }
+
+        private void Eliminar_Click(object sender, RoutedEventArgs e)
+        {
+            // Aquí agregas la lógica para eliminar el artículo de la base de datos
+            MessageBox.Show("Artículo eliminado exitosamente.");
+        }
+
     }
 }

@@ -1,12 +1,25 @@
 ﻿<Window x:Class="WpfSistemaPOS.Articulos.ConsultarArticulo"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfSistemaPOS.Articulos"
-        mc:Ignorable="d"
-        Title="ConsultarArticulo" Height="450" Width="800">
+        Title="Consultar Artículo" Height="450" Width="800">
     <Grid>
-        
+        <TextBox x:Name="txtBuscar" Width="200" Height="30" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+        <Button Content="Consultar" Width="100" Height="30" Margin="220,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Consultar_Click"/>
+
+        <ListView x:Name="lvResultados" Margin="10,50,10,150" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID Compuesto" DisplayMemberBinding="{Binding IdCompuesto}" Width="150"/>
+                    <GridViewColumn Header="Descripción" DisplayMemberBinding="{Binding Descripcion}" Width="200"/>
+                    <GridViewColumn Header="Precio" DisplayMemberBinding="{Binding Precio}" Width="100"/>
+                    <GridViewColumn Header="Existencia" DisplayMemberBinding="{Binding Existencia}" Width="100"/>
+                    <GridViewColumn Header="Categoría" DisplayMemberBinding="{Binding Categoria}" Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <TextBlock Text="Compatibilidad" FontWeight="Bold" Margin="10,310,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ListBox x:Name="lbCompatibilidad" Margin="10,340,10,10" Height="100"/>
     </Grid>
 </Window>

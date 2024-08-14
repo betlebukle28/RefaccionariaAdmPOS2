@@ -1,12 +1,25 @@
 ﻿<Window x:Class="WpfSistemaPOS.Articulos.ModificarArticulo"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfSistemaPOS.Articulos"
-        mc:Ignorable="d"
-        Title="ModificarArticulo" Height="450" Width="800">
+        Title="Modificar Artículo" Height="450" Width="400">
     <Grid>
-        
+        <StackPanel Margin="20">
+            <TextBlock Text="ID Compuesto:"/>
+            <TextBox x:Name="txtIdCompuesto" IsReadOnly="True"/>
+
+            <TextBlock Text="Descripción:"/>
+            <TextBox x:Name="txtDescripcion"/>
+
+            <TextBlock Text="Precio:"/>
+            <TextBox x:Name="txtPrecio"/>
+
+            <TextBlock Text="Existencia:"/>
+            <TextBox x:Name="txtExistencia"/>
+
+            <TextBlock Text="Categoría:"/>
+            <TextBox x:Name="txtCategoria"/>
+
+            <Button Content="Guardar Cambios" Margin="0,20,0,0" Click="GuardarCambios_Click"/>
+        </StackPanel>
     </Grid>
 </Window>
